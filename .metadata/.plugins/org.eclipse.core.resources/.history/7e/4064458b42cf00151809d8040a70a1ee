@@ -1,0 +1,8 @@
+package com.java.jersey.messenger.data;
+
+public class MessengerData {
+	
+	private Map<Long, Message> messages = new HashMap<>();
+	
+
+}

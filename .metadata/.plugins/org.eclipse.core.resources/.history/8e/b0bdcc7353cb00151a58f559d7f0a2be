@@ -1,0 +1,8 @@
+package com.java.jersey.messenger.resource;
+
+@Path("/message")
+public class MessengerResource {
+	
+	
+
+}

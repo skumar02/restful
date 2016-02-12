@@ -1,0 +1,5 @@
+package com.java.jersey.messenger.data;
+
+public class MessengerData {
+
+}

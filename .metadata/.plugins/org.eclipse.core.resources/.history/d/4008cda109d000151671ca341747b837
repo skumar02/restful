@@ -1,0 +1,50 @@
+package com.java.jersey.messenger.service;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+import com.java.jersey.messenger.data.MessengerData;
+import com.java.jersey.messenger.model.Message;
+
+public class MessengerService {
+	
+	Map<Long, Message> data = MessengerData.messageMap;
+		
+	public MessengerService() {
+		
+		MessengerData.messageMap.put(1L, new Message());
+		
+	}
+		
+	public List<Message> getMessages() {
+		
+		return new ArrayList<>(MessengerData.messageMap.values());
+	}
+	
+	
+	public Message getMessage(long id) {
+		
+		return data.get(id);		
+	}
+	
+	public Message addMessage(Message message) {
+		
+		data.put((long) (data.size() + 1), message);
+		
+		return data.get((long) data.size());		
+	}
+	
+	public Message updateMessage(Message message) {
+		
+		data.put(message.getId(), message);
+		
+		return data.get(message.getId());
+	}
+	
+	public Message removeMessage(long id) {
+		
+		return data.remove(id);		
+	}
+	
+}

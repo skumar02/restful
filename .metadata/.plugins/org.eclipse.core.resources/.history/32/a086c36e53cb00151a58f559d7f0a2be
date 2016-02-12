@@ -1,0 +1,5 @@
+package com.java.jersey.messenger.resource;
+
+public class MessengerResource {
+
+}

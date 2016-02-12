@@ -1,0 +1,16 @@
+package com.java.jersey.messenger.resource;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+
+@Path("/message")
+public class MessengerResource {
+	
+	@GET
+	public String getMessage() {
+		
+		return "Hello Sunny!";
+		
+	}
+
+}

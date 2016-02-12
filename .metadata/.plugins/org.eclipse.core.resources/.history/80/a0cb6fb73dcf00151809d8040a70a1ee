@@ -1,0 +1,5 @@
+package com.java.jersey.messenger.model;
+
+public class Message {
+
+}

@@ -1,0 +1,18 @@
+package com.java.jersey.messenger.service;
+
+import java.util.List;
+
+import com.java.jersey.messenger.model.Message;
+
+public class MessengerService {
+	
+	private List<Message> messages;
+	
+	public List<Message> getMessages() {
+		
+		Message m1 = new Message(1L, "Hello Java!", "Sunny");
+		Message m2 = new Message(2L, "Hello Java!", "Sunny");
+		
+	}
+
+}
